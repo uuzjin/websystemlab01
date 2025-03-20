@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2414590 임유진</title>
+        <style>
+            label{
+                display: inline-block;
+                width: 80px;
+                height:30px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="main.html">메인 화면으로 돌아가기</a>
+            <h1>register.html</h1>
+            <h2>동아리 가입 양식</h2>
+        </header>
+        <article>
+           <label for="name">이름</label>
+           <input type="text" id="name"><br>
+           <label for="major">학부/학과</label>
+           <select id="major" name="major">
+                <option value="software">소프트웨어학부</option>
+                <option value="chemistry">화학과</option>
+                <option value="math">수학과</option>
+                <option value="pharmacy">약학부</option>
+           </select><br>
+           <label for="grade">학년</label>
+           <input type="radio" id="first" name="grade" value="1">
+           <label for="first">1학년</label>
+           <input type="radio" id="second" name="grade" value="2">
+           <label for="second">2학년</label>
+           <input type="radio" id="third" name="grade" value="3">
+           <label for="third">3학년</label>
+           <input type="radio" id="fourth" name="grade" value="4">
+           <label for="fourth">4학년</label><br>
+           <label for="studentnumber">학번</label>
+           <input type="text" id="studentnumber" placeholder="2414590"><br>
+           <label for="mail">이메일</label>
+           <input type="text" id="mail" placeholder="id@host"><br>
+           <label for="phonenum">전화번호</label>
+           <input type="tel" id="phonenum" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br>
+           <label for="motiv">가입 동기</label>
+           <textarea name="motiv" rows="10" cols="50" style="vertical-align: top;" placeholder="가입 동기를 입력하시오."></textarea><br><br>
+           <input type="submit" value="가입하기">
+           <input type="reset" value="취소하기">
+        </article>
+    </body>
+</html>
